@@ -7,9 +7,9 @@ COPY README.md /extension/
 
 FROM scratch
 
-LABEL org.opencontainers.image.title="Your Hello World Extension" \
-        org.opencontainers.image.description="Hello World Extension" \
-        org.opencontainers.image.vendor="Your Org / Username" \
+LABEL org.opencontainers.image.title="Mirror Magic Mirage" \
+        org.opencontainers.image.description="Auto configure Podman machines mirroring" \
+        org.opencontainers.image.vendor="jeffmaury" \
         io.podman-desktop.api.version=">= 1.12.0"
 
 COPY --from=builder /extension /extension
