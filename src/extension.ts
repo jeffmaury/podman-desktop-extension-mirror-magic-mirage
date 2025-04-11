@@ -1,20 +1,26 @@
-import type { ExtensionContext } from '@podman-desktop/api';
-import * as extensionApi from '@podman-desktop/api';
+/**********************************************************************
+ * Copyright (C) 2025
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ ***********************************************************************/
+import type {ExtensionContext} from '@podman-desktop/api';
+import {MagicMirror} from './magicMirror';
 
-/**
- * Below is the "typical" extension.ts file that is used to activate and deactivate the extension.
- * this file as well as package.json are the two main files that are required to develop a Podman Desktop extension.
- */
 
 // Initialize the activation of the extension.
 export async function activate(extensionContext: ExtensionContext): Promise<void> {
-  console.log('starting hello world extension');
-
-  // Create a dialog that says "Hello World" with the extensionApi on load
-  extensionApi.window.showInformationMessage('Hello World from the Podman Desktop Extension!');
+  new MagicMirror(extensionContext).start();
 }
 
-// Deactivate the extension
-export async function deactivate(): Promise<void> {
-  console.log('stopping hello world extension');
-}
