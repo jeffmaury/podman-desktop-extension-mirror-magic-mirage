@@ -12,13 +12,32 @@
   "main": "./dist/extension.js",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint ."
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.8",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
     "@podman-desktop/api": "1.17.2",
     "@podman-desktop/podman-extension-api": "^1.17.2",
     "@types/node": "^22",
-    "typescript": "5.8.3"
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-etc": "^2.0.3",
+    "eslint-plugin-file-progress": "^3.0.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-redundant-undefined": "^1.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.2",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "globals": "^16.0.0",
+    "typescript": "5.8.2",
+    "typescript-eslint": "^8.29.1"
   },
   "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
 }
