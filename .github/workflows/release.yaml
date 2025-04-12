@@ -113,11 +113,16 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Execute npm
-        run: npm install
+      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Execute pnpm
+        run: pnpm install
 
       - name: Run Build
-        run: npm build
+        run: pnpm build
 
       - name: Login to ghcr.io
         run: podman login --username ${{ github.repository_owner }} --password ${{ secrets.GITHUB_TOKEN }} ghcr.io
