@@ -15,14 +15,13 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  ***********************************************************************/
-import {
-    ContainerProviderConnection,
+import type {
     ExtensionContext,
     RunResult,
-    UpdateContainerConnectionEvent
+    UpdateContainerConnectionEvent,
 } from '@podman-desktop/api';
 import * as podmanDesktopAPI from '@podman-desktop/api';
-import {PodmanExtensionApi} from '@podman-desktop/podman-extension-api';
+import type {PodmanExtensionApi} from '@podman-desktop/podman-extension-api';
 
 const podmanApiDummy = {
     exec: (): Promise<RunResult> => {
@@ -32,7 +31,7 @@ const podmanApiDummy = {
 
 function getPodmanApi(): PodmanExtensionApi {
     const podmanExports = podmanDesktopAPI.extensions.getExtension<PodmanExtensionApi>('podman-desktop.podman')?.exports;
-    return podmanExports ? podmanExports : podmanApiDummy;
+    return podmanExports ?? podmanApiDummy;
 }
 
 const MIRROR_CONFIGURATION_FILE = '/etc/containers/registries.conf.d/998-mirror-hub.conf';
@@ -65,14 +64,14 @@ export class MagicMirror {
             podmanDesktopAPI.window.showNotification({
                 title: 'Magic Mirror',
                 body: `Configured machine ${name} to use mirror registry`,
-                type: 'info'
+                type: 'info',
             });
         } catch (error: unknown) {
             console.log('Failed to configure machine', error);
             podmanDesktopAPI.window.showNotification({
                 title: 'Magic Mirror',
                 body: `Failed to configure machine ${name} to use mirror registry`,
-                type: 'error'
+                type: 'error',
             });
         }
     }
@@ -87,7 +86,7 @@ export class MagicMirror {
         }
     }
 
-    start() {
+    start(): void {
         this.extensionContext.subscriptions.push(podmanDesktopAPI.provider.onDidUpdateContainerConnection(this.handleMachine.bind(this)));
     }
 
