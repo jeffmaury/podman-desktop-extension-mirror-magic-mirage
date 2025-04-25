@@ -23,7 +23,7 @@
     "@podman-desktop/api": "1.18.0",
     "@podman-desktop/podman-extension-api": "^1.18.0",
     "@types/node": "^22",
-    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^9.25.1",
     "eslint-import-resolver-typescript": "^4.3.4",
