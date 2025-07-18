@@ -21,8 +21,8 @@ importers:
         specifier: 1.20.2
         version: 1.20.2
       '@podman-desktop/podman-extension-api':
-        specifier: ^1.20.1
-        version: 1.20.1
+        specifier: ^1.20.2
+        version: 1.20.2
       '@types/node':
         specifier: ^22
         version: 22.16.4
@@ -182,14 +182,11 @@ packages:
     peerDependencies:
       typescript: ^3 || ^4 || ^5
 
-  '@podman-desktop/api@1.20.1':
-    resolution: {integrity: sha512-fBWqQ+uTP7Fj9ZtJ8RhN3brXeV7wPOhQNIZfdjHhYnndfJR6Mbd2eChFGFyPgY1XgEggPy+/18j1POHFJLitPg==}
-
   '@podman-desktop/api@1.20.2':
     resolution: {integrity: sha512-aQP4nJcm/TeV8qj5a6N1rBtNMoohKDGCrVn3tgVZpgRysE489cbgIBOKaP3bJ0WeyaldY5kAEHG/VALHZr6Rgg==}
 
-  '@podman-desktop/podman-extension-api@1.20.1':
-    resolution: {integrity: sha512-Nq4ID8efz5RyviNK7SsmDxYGSQAYwTBPoIW9JCCBs1/AfSFFAqydad+7xVFBjNF9VymOiUToKXpECNfUdQOxDg==}
+  '@podman-desktop/podman-extension-api@1.20.2':
+    resolution: {integrity: sha512-U3bc84U8/GczrTZF9YdIucWZUZOhLLq9pdy9Jx+lUc05MEvIu1Pxdyalovt4uvVV+s1/lchKayhqyEC3fAOT5A==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -1731,13 +1728,11 @@ snapshots:
       esquery: 1.6.0
       typescript: 5.8.3
 
-  '@podman-desktop/api@1.20.1': {}
-
   '@podman-desktop/api@1.20.2': {}
 
-  '@podman-desktop/podman-extension-api@1.20.1':
+  '@podman-desktop/podman-extension-api@1.20.2':
     dependencies:
-      '@podman-desktop/api': 1.20.1
+      '@podman-desktop/api': 1.20.2
 
   '@rtsao/scc@1.1.0': {}
 
