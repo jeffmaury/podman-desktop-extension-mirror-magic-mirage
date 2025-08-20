@@ -21,8 +21,8 @@ importers:
         specifier: 1.20.2
         version: 1.20.2
       '@podman-desktop/podman-extension-api':
-        specifier: ^1.20.2
-        version: 1.20.2
+        specifier: ^1.21.0
+        version: 1.21.0
       '@types/node':
         specifier: ^22
         version: 22.17.2
@@ -181,8 +181,11 @@ packages:
   '@podman-desktop/api@1.20.2':
     resolution: {integrity: sha512-aQP4nJcm/TeV8qj5a6N1rBtNMoohKDGCrVn3tgVZpgRysE489cbgIBOKaP3bJ0WeyaldY5kAEHG/VALHZr6Rgg==}
 
-  '@podman-desktop/podman-extension-api@1.20.2':
-    resolution: {integrity: sha512-U3bc84U8/GczrTZF9YdIucWZUZOhLLq9pdy9Jx+lUc05MEvIu1Pxdyalovt4uvVV+s1/lchKayhqyEC3fAOT5A==}
+  '@podman-desktop/api@1.21.0':
+    resolution: {integrity: sha512-EaQU3ommk2F6nb/qYAGdZSm0F1xpxGmhNQTlDOx8yMbHMwKPFM01zNBHD9+xyjrAhYWcVP79nVxkfBrzBfvitw==}
+
+  '@podman-desktop/podman-extension-api@1.21.0':
+    resolution: {integrity: sha512-JyhLVyIFbDgo4cGR0o3j+lQE0UAPDPydQO11X3cfem9kD70FO3MJlHgxj7NJwzATbcv+fJ1mtOdQYS97ULXD/g==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -1720,9 +1723,11 @@ snapshots:
 
   '@podman-desktop/api@1.20.2': {}
 
-  '@podman-desktop/podman-extension-api@1.20.2':
+  '@podman-desktop/api@1.21.0': {}
+
+  '@podman-desktop/podman-extension-api@1.21.0':
     dependencies:
-      '@podman-desktop/api': 1.20.2
+      '@podman-desktop/api': 1.21.0
 
   '@rtsao/scc@1.1.0': {}
 
