@@ -25,7 +25,7 @@
     "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^8.40.0",
     "@typescript-eslint/parser": "^8.40.0",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-etc": "^2.0.3",
     "eslint-plugin-file-progress": "^3.0.2",
