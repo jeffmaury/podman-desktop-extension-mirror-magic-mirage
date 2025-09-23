@@ -15,8 +15,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       '@eslint/js':
-        specifier: ^9.35.0
-        version: 9.35.0
+        specifier: ^9.36.0
+        version: 9.36.0
       '@podman-desktop/api':
         specifier: 1.21.0
         version: 1.21.0
