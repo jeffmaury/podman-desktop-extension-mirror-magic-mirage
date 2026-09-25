@@ -21,8 +21,8 @@ importers:
         specifier: 1.27.1
         version: 1.27.1
       '@podman-desktop/podman-extension-api':
-        specifier: ^1.25.1
-        version: 1.25.1
+        specifier: ^1.29.1
+        version: 1.29.1
       '@types/node':
         specifier: ^22
         version: 22.19.17
@@ -200,14 +200,14 @@ packages:
     peerDependencies:
       typescript: ^3 || ^4 || ^5
 
-  '@podman-desktop/api@1.25.1':
-    resolution: {integrity: sha512-OTsf2q0g5GavfalYFpOtyn8QVVkLKKJOH1zMabqcIK7yTpu093FRCQY/hBdUYx25UyEXhtX4v7QAP0+lc9B+jw==}
-
   '@podman-desktop/api@1.27.1':
     resolution: {integrity: sha512-nyli20LEpfti1LllIkQV56SgivZZtA+LBdP3iFND75vE1+njvfNhluCOC4eZaBoea0E0OlgIq828Ro1DZtlBFw==}
 
-  '@podman-desktop/podman-extension-api@1.25.1':
-    resolution: {integrity: sha512-jC7V3HkvYVNZmFfywdQYikDapnjpcIGm9m15QkFFrpvqn8PeMybyyMs0bVJeP2/MA//m56NT+WDWY5objm26Qw==}
+  '@podman-desktop/api@1.29.1':
+    resolution: {integrity: sha512-UtCY2t5hVLz5pHXSV5DmQESPLUqSxDgKhJfqlQ4GO7L0x/fQdaX22KGbuzOEUSs1KzB0nwWNB3ylaTcE/OBdZA==}
+
+  '@podman-desktop/podman-extension-api@1.29.1':
+    resolution: {integrity: sha512-jB6oC97jyEUWIRyovCVShwRVjJbsJecs6qrDnMRkpRzP9RTChRXDZqdoenLmA5WKXpUC0++CXDerNIWopYIfJQ==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -929,6 +929,7 @@ packages:
   eslint@9.39.2:
     resolution: {integrity: sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1899,13 +1900,13 @@ snapshots:
       esquery: 1.6.0
       typescript: 5.9.3
 
-  '@podman-desktop/api@1.25.1': {}
-
   '@podman-desktop/api@1.27.1': {}
 
-  '@podman-desktop/podman-extension-api@1.25.1':
+  '@podman-desktop/api@1.29.1': {}
+
+  '@podman-desktop/podman-extension-api@1.29.1':
     dependencies:
-      '@podman-desktop/api': 1.25.1
+      '@podman-desktop/api': 1.29.1
 
   '@rtsao/scc@1.1.0': {}
 
