@@ -54,8 +54,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(@typescript-eslint/parser@8.57.2(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)
       eslint-plugin-simple-import-sort:
-        specifier: ^13.0.0
-        version: 13.0.0(eslint@9.39.2)
+        specifier: ^14.0.0
+        version: 14.0.0(eslint@9.39.2)
       eslint-plugin-sonarjs:
         specifier: ^3.0.6
         version: 3.0.6(eslint@9.39.2)
@@ -890,8 +890,8 @@ packages:
       '@typescript-eslint/parser': ^6.2.0
       eslint: ^8.46.0
 
-  eslint-plugin-simple-import-sort@13.0.0:
-    resolution: {integrity: sha512-McAc+/Nlvcg4byY/CABGH8kqnefWBj8s3JA2okEtz8ixbECQgU46p0HkTUKa4YS7wvgGceimlc34p1nXqbWqtA==}
+  eslint-plugin-simple-import-sort@14.0.0:
+    resolution: {integrity: sha512-NUJO0+XFCkk+o5EsAJruTgnfMEpeWrPWeJS15UVF60GgXmqz1BJ9/3hzlvG7lkL8Bubzos5cCLptThbFfPnSMQ==}
     peerDependencies:
       eslint: '>=5.0.0'
 
@@ -929,6 +929,7 @@ packages:
   eslint@9.39.2:
     resolution: {integrity: sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -2739,7 +2740,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-simple-import-sort@13.0.0(eslint@9.39.2):
+  eslint-plugin-simple-import-sort@14.0.0(eslint@9.39.2):
     dependencies:
       eslint: 9.39.2
 
